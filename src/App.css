@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+body {
+  margin:0;
+  padding:0
+}
+.app-container {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding:20px 0
+}
+.logo {
+  color: #2ecc71;
+  font-family: Fredoka One;
+  font-size: 30px;
+}
+.single-document-div {
+  min-width: 90%;
+  min-height:100vh
+}
+.single-document {
+  min-width: 70%;
+  max-width: 70%;
+  min-height: 80vh;
+  border:none;
+  box-shadow: 1px 1px 30px silver;
+  border-radius:5px;
+  padding:10vh 10vw;
+}
+.form-control {
+
+}
+.choose-recipient-div {
+  max-width:70%;
+  margin:auto
+}
