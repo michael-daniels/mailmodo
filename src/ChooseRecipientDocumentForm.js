@@ -50,10 +50,10 @@ class ChooseRecipientDocumentForm extends Component {
     return (
       <div className="choose-recipient-document-form">
         <form className="form-inline" onSubmit={this.handleSelectionsSubmit}>
-          <select className="form-control" onChange={this.handleRecipientChange}>
+          <select className="form-control btn" onChange={this.handleRecipientChange}>
             {allRecipients}
           </select>
-          <select className="form-control" onChange={this.handleDocumentChange}>
+          <select className="form-control btn" onChange={this.handleDocumentChange}>
             {allDocuments}
           </select>
           <button type="submit" className="btn">Populate Selections</button>
