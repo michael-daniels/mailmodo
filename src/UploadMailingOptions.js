@@ -9,7 +9,7 @@ class UploadMailingOptions extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="row">
+        <div className="row upload-row">
           <div className="col-md-6">
             <form>
               <input className="form-control" placeholder="name"/>
@@ -21,7 +21,7 @@ class UploadMailingOptions extends Component {
           </div>
           <div className="col-md-6">
             <form>
-              <input className="form-control" />
+              <textarea className="form-control upload-text-area" />
             </form>
           </div>
         </div>
