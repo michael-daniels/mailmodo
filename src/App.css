@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 body {
   margin:0;
   padding:0
@@ -51,14 +52,18 @@ body {
 }
 .top-nav > a {
   color:white;
-  font-size:24px;
+  font-size:22px;
 
 }
 .top-nav {
+  font-family: Quicksand;
   background-color:#2ecc71;
   color:#2ecc71;
   text-align: center;
   border:3px #f2f2f2 solid;
   border-radius: 5px;
   padding:0 -50px;
+}
+.option-select {
+  margin-right:4px;
 }

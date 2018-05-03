@@ -76,13 +76,13 @@ class App extends Component {
           <div>
             <div className="row top-nav-row">
               <div className="col-md-4 top-nav">
-                <Link to="/upload">Upload</Link>
+                <Link to="/upload">recipients & docs</Link>
               </div>
               <div className="col-md-4 top-nav">
-                <Link to="/select">Select</Link>
+                <Link to="/select">prepare a mailing</Link>
               </div>
               <div className="col-md-4 top-nav">
-                <Link to="/select">Select</Link>
+                <Link to="/select">review & send</Link>
               </div>
               </div>
               <Route exact path="/select" render={(props) => ( <SelectOptions mailingOptions={this.state} updateStateSelectedFunc={this.updateStateSelected}/> )} />
