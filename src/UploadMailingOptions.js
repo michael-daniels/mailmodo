@@ -17,11 +17,14 @@ class UploadMailingOptions extends Component {
               <input className="form-control" placeholder="city" />
               <input className="form-control" placeholder="state" />
               <input className="form-control" placeholder="zip" />
+              <button className="btn form-control">upload new recipient</button>
             </form>
           </div>
           <div className="col-md-6">
             <form>
-              <textarea className="form-control upload-text-area" />
+              <input className="form-control" placeholder="document title" />
+              <textarea className="form-control upload-text-area" placeholder="document content"/>
+              <button className="btn form-control">upload new document template</button>
             </form>
           </div>
         </div>
