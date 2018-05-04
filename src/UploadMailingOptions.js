@@ -14,6 +14,14 @@ class UploadMailingOptions extends Component {
       state:this.state.state,
       zip:this.state.zip,
     })
+    this.setState({
+      id:100,
+      name:'',
+      street:'',
+      city:'',
+      state:'',
+      zip:'',
+    })
   }
   handleDocumentSubmit = (event) => {
     event.preventDefault()
@@ -21,6 +29,11 @@ class UploadMailingOptions extends Component {
       id:100,
       title:this.state.title,
       content:this.state.content,
+    })
+    this.setState({
+      id:'',
+      title:'',
+      content:'',
     })
   }
 

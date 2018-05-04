@@ -33,12 +33,12 @@ class App extends Component {
       {
         id:1,
         title:'Collections Notice',
-        content:'[Lorem],\n\nIpsum dolor sit amet, magna oblique deserunt ne has, mea sint debet habemus at. In vim ignota numquam, cu errem denique mel. Pri meis labore no. Ius disputando philosophia te. Eum ei agam nostrum. Per id doming delectus. \n\n - Michael'
+        content:'[RECIPIENT],\n\nIpsum dolor sit amet, magna oblique deserunt ne has, mea sint debet habemus at. In vim ignota numquam, cu errem denique mel. Pri meis labore no. Ius disputando philosophia te. Eum ei agam nostrum. Per id doming delectus. \n\n - Michael'
       },
       {
         id:2,
         title:'Violation Notice',
-        content:'[Lorem],\n\nOffendit ea quo, minim elitr efficiendi et has, sed veri noluisse elaboraret cu. Sea autem docendi ut, aliquid feugiat epicurei in cum.\n\n - John'
+        content:'[RECIPIENT],\n\nOffendit ea quo, minim elitr efficiendi et has, sed veri noluisse elaboraret cu. Sea autem docendi ut, aliquid feugiat epicurei in cum.\n\n - John'
       },
     ],
     selected:[
