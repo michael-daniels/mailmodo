@@ -5,11 +5,7 @@ import SingleDocument from './SingleDocument'
 import SelectOptions from './SelectOptions'
 import UploadMailingOptions from './UploadMailingOptions'
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 
 class App extends Component {
@@ -65,6 +61,12 @@ class App extends Component {
   updateStateSelected = (selectedRecipient, selectedDocument) => {
     this.setState({...this.state, selected:[selectedRecipient,selectedDocument]})
   }
+  updateStateRecipients = (newRecipient) => {
+    this.setState({...this.state, recipients:[...this.state.recipients, newRecipient]})
+  }
+  updateStateDocuments = (newDocument) => {
+    this.setState({...this.state, documents:[...this.state.documents, newDocument]})
+  }
 
   render() {
     console.log("STATE UPDATED TO", this.state)
@@ -86,7 +88,7 @@ class App extends Component {
               </div>
               </div>
               <Route exact path="/select" render={(props) => ( <SelectOptions mailingOptions={this.state} updateStateSelectedFunc={this.updateStateSelected}/> )} />
-              <Route exact path="/upload" component={UploadMailingOptions}/>
+              <Route exact path="/upload" render={(props) => ( <UploadMailingOptions updateRecipientsFunc={this.updateStateRecipients} updateDocumentsFunc={this.updateStateDocuments}/> )} />
           </div>
         </Router>
       </div>
