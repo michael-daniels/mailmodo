@@ -4,6 +4,10 @@ body {
   margin:0;
   padding:0
 }
+hr {
+  margin:0;
+  padding:0;
+}
 .app-container {
   background-color: #f2f2f2;
   text-align: center;
@@ -16,6 +20,10 @@ body {
   margin-bottom:25px;
 }
 .single-document-div {
+  min-width: 90%;
+  min-height:100vh
+}
+.review-send-div {
   min-width: 90%;
   min-height:100vh
 }
@@ -74,4 +82,28 @@ body {
 }
 .upload-text-area {
   min-height: 300px;
+}
+.single-recipient {
+  max-width: 80%;
+  margin:0 auto;
+  text-align: left;
+}
+.singleRecipientReviewHeader {
+  max-width:100%;
+  margin:0 auto;
+}
+.singleRecipientReviewHeaderText {
+  font-size:18px;
+  color:gray;
+}
+.singleRecipientReview {
+  border: 2px #03A9F4 solid;
+  border-radius: 5px;
+  max-width:100%;
+  margin:10px auto;
+  padding:10px 0;
+}
+.singleRecipientReviewText {
+  font-size:18px;
+  color:#03A9F4
 }

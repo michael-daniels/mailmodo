@@ -10,8 +10,8 @@ class SingleDocument extends Component {
     let selectedContent = this.props.currentDocument.selected[1].content;
     let selectedContentArray = selectedContent.split(' ')
     let selectedContentArrayMap = selectedContentArray.map((item) => {
-      if (item.includes('[RECIPIENT]')) {
-        let recipientMergeTag = item.replace('[RECIPIENT]', this.props.currentDocument.selected[0].name)
+      if (item.includes('[RECIPIENT-NAME]')) {
+        let recipientMergeTag = item.replace('[RECIPIENT-NAME]', this.props.currentDocument.selected[0].name)
         return recipientMergeTag
       }
       return item
